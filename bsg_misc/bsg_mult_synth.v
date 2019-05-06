@@ -4,6 +4,6 @@ module bsg_mult_synth #(parameter width_p=8)
 	,output signed [2*width_p-1:0] out
 	);
 
-	out = in_a * in_b;
+	assign out = in_a * in_b;
 
 endmodule
