@@ -9,7 +9,8 @@
       "constraints" : {"clock_period" : "10", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -26,7 +27,8 @@
       "constraints" : {"clock_period" : "6.67", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -43,7 +45,8 @@
       "constraints" : {"clock_period" : "5", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -60,7 +63,8 @@
       "constraints" : {"clock_period" : "4", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -77,7 +81,8 @@
       "constraints" : {"clock_period" : "3.33", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -94,7 +99,8 @@
       "constraints" : {"clock_period" : "2.86", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -113,7 +119,8 @@
       
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -130,7 +137,8 @@
       "constraints" : {"clock_period" : "2.22", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
@@ -147,7 +155,8 @@
       "constraints" : {"clock_period" : "2", "clk_port_name" : "clk_i", "input" : "0", "output" : "0", "uncertainty" : "0", "io_time_format" : "period"},
       "filelist" : [ 
         "basejump_stl/bsg_misc/bsg_defines.v",
-        "basejump_stl/bsg_misc/bsg_div_srt.v", 
+        "basejump_stl/bsg_misc/bsg_div_srt.v",
+        "basejump_stl/bsg_misc/bsg_div_srt_core.v",
         "basejump_stl/bsg_misc/bsg_counting_leading_zeros.v",
         "basejump_stl/bsg_misc/bsg_priority_encode.v",
         "basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v",
