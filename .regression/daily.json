@@ -1,6 +1,7 @@
 {
 	"daily_design" : [
-			{"...":"<bsg_mem_1r1w_async.json>"},
-			{"...":"<bsg_mem_1r1w_sync.json>"}
+			{"...":"bsg_mul_iterative_32bits_stride8.json"},
+			{"...":"bsg_mul_iterative_32bits_stride16.json"},
+			{"...":"bsg_mul_iterative_32bits_stride32.json"}
 	]
 } 
