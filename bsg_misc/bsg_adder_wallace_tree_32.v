@@ -3,8 +3,8 @@ module bsg_adder_wallace_tree_32 #(
   parameter integer width_p = "inv"
 )(
   input [31:0][width_p-1:0] ops_i
-  ,output [5+width_p:0] resA_o
-  ,output [5+width_p:0] resB_o
+  ,output [4+width_p:0] resA_o
+  ,output [4+width_p:0] resB_o
 );
 wire [width_p-1:0] csa_0_0_res_o;
 wire [width_p-1:0] csa_0_0_car_o;
@@ -62,10 +62,10 @@ wire [width_p+3:0] csa_4_1_res_o;
 wire [width_p+3:0] csa_4_1_car_o;
 wire [width_p+4:0] csa_5_0_res_o;
 wire [width_p+4:0] csa_5_0_car_o;
-wire [width_p+5:0] csa_6_0_res_o;
-wire [width_p+5:0] csa_6_0_car_o;
-wire [width_p+5:0] csa_7_0_res_o;
-wire [width_p+5:0] csa_7_0_car_o;
+wire [width_p+4:0] csa_6_0_res_o;
+wire [width_p+4:0] csa_6_0_car_o;
+wire [width_p+4:0] csa_7_0_res_o;
+wire [width_p+4:0] csa_7_0_car_o;
 
 bsg_adder_carry_save#(
   .width_p(width_p+0)
@@ -404,29 +404,29 @@ bsg_adder_carry_save#(
 wire [width_p+5:0] csa_internal_wire_54 = {1'b0, csa_5_0_res_o};
 wire [width_p+5:0] csa_internal_wire_55 = {csa_5_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+6)
+  .width_p(width_p+5)
 ) csa_6_0 (
-  .opA_i({1'b0, csa_internal_wire_52})
-  ,.opB_i({1'b0, csa_internal_wire_53})
-  ,.opC_i(csa_internal_wire_54)
+  .opA_i(csa_internal_wire_52)
+  ,.opB_i(csa_internal_wire_53)
+  ,.opC_i(csa_internal_wire_54[width_p+4:0])
   ,.res_o(csa_6_0_res_o)
   ,.car_o(csa_6_0_car_o)
 );
 
-wire [width_p+6:0] csa_internal_wire_56 = {1'b0, csa_6_0_res_o};
-wire [width_p+6:0] csa_internal_wire_57 = {csa_6_0_car_o,1'b0};
+wire [width_p+5:0] csa_internal_wire_56 = {1'b0, csa_6_0_res_o};
+wire [width_p+5:0] csa_internal_wire_57 = {csa_6_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+6)
+  .width_p(width_p+5)
 ) csa_7_0 (
-  .opA_i(csa_internal_wire_55)
-  ,.opB_i(csa_internal_wire_56[width_p+5:0])
-  ,.opC_i(csa_internal_wire_57[width_p+5:0])
+  .opA_i(csa_internal_wire_55[width_p+4:0])
+  ,.opB_i(csa_internal_wire_56[width_p+4:0])
+  ,.opC_i(csa_internal_wire_57[width_p+4:0])
   ,.res_o(csa_7_0_res_o)
   ,.car_o(csa_7_0_car_o)
 );
 
-wire [width_p+6:0] csa_internal_wire_58 = {1'b0, csa_7_0_res_o};
-wire [width_p+6:0] csa_internal_wire_59 = {csa_7_0_car_o,1'b0};
+wire [width_p+5:0] csa_internal_wire_58 = {1'b0, csa_7_0_res_o};
+wire [width_p+5:0] csa_internal_wire_59 = {csa_7_0_car_o,1'b0};
 
 assign resA_o = csa_internal_wire_58;
 assign resB_o = csa_internal_wire_59;

@@ -13,8 +13,8 @@ module bsg_adder_wallace_tree #(
 )
 (
   input [capacity_p-1:0][width_p-1:0] ops_i
-  ,output [output_size_lp:0] resA_o
-  ,output [output_size_lp:0] resB_o
+  ,output [output_size_lp-1:0] resA_o
+  ,output [output_size_lp-1:0] resB_o
 );
   if(capacity_p == 8) begin
     bsg_adder_wallace_tree_8 #(

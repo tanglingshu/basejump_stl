@@ -3,8 +3,8 @@ module bsg_adder_wallace_tree_16 #(
   parameter integer width_p = "inv"
 )(
   input [15:0][width_p-1:0] ops_i
-  ,output [4+width_p:0] resA_o
-  ,output [4+width_p:0] resB_o
+  ,output [3+width_p:0] resA_o
+  ,output [3+width_p:0] resB_o
 );
 wire [width_p-1:0] csa_0_0_res_o;
 wire [width_p-1:0] csa_0_0_car_o;
@@ -32,8 +32,8 @@ wire [width_p+2:0] csa_3_1_res_o;
 wire [width_p+2:0] csa_3_1_car_o;
 wire [width_p+3:0] csa_4_0_res_o;
 wire [width_p+3:0] csa_4_0_car_o;
-wire [width_p+4:0] csa_5_0_res_o;
-wire [width_p+4:0] csa_5_0_car_o;
+wire [width_p+3:0] csa_5_0_res_o;
+wire [width_p+3:0] csa_5_0_car_o;
 
 bsg_adder_carry_save#(
   .width_p(width_p+0)
@@ -192,17 +192,17 @@ bsg_adder_carry_save#(
 wire [width_p+4:0] csa_internal_wire_24 = {1'b0, csa_4_0_res_o};
 wire [width_p+4:0] csa_internal_wire_25 = {csa_4_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+5)
+  .width_p(width_p+4)
 ) csa_5_0 (
-  .opA_i({1'b0, csa_internal_wire_23})
-  ,.opB_i(csa_internal_wire_24)
-  ,.opC_i(csa_internal_wire_25)
+  .opA_i(csa_internal_wire_23)
+  ,.opB_i(csa_internal_wire_24[width_p+3:0])
+  ,.opC_i(csa_internal_wire_25[width_p+3:0])
   ,.res_o(csa_5_0_res_o)
   ,.car_o(csa_5_0_car_o)
 );
 
-wire [width_p+5:0] csa_internal_wire_26 = {1'b0, csa_5_0_res_o};
-wire [width_p+5:0] csa_internal_wire_27 = {csa_5_0_car_o,1'b0};
+wire [width_p+4:0] csa_internal_wire_26 = {1'b0, csa_5_0_res_o};
+wire [width_p+4:0] csa_internal_wire_27 = {csa_5_0_car_o,1'b0};
 
 assign resA_o = csa_internal_wire_26;
 assign resB_o = csa_internal_wire_27;

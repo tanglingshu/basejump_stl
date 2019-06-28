@@ -3,8 +3,8 @@ module bsg_adder_wallace_tree_8 #(
   parameter integer width_p = "inv"
 )(
   input [7:0][width_p-1:0] ops_i
-  ,output [3+width_p:0] resA_o
-  ,output [3+width_p:0] resB_o
+  ,output [2+width_p:0] resA_o
+  ,output [2+width_p:0] resB_o
 );
 wire [width_p-1:0] csa_0_0_res_o;
 wire [width_p-1:0] csa_0_0_car_o;
