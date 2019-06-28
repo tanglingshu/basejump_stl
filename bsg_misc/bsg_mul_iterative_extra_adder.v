@@ -226,6 +226,7 @@ module bsg_mul_iterative_extra_adder #(
     bsg_adder_wallace_tree #(
       .width_p(csa_output_size_lp)
       ,.capacity_p(iter_step_p)
+      ,.output_size_p(csa_output_size_lp)
     )
     tree(
       .ops_i(ops)

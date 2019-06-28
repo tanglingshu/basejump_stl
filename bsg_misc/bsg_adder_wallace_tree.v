@@ -9,12 +9,12 @@
 module bsg_adder_wallace_tree #(
   parameter integer width_p = "inv"
   ,parameter integer capacity_p = "inv"
-  ,localparam integer output_size_lp = width_p + `BSG_SAFE_CLOG2(capacity_p)
+  ,parameter integer output_size_p = width_p + `BSG_SAFE_CLOG2(capacity_p)
 )
 (
   input [capacity_p-1:0][width_p-1:0] ops_i
-  ,output [output_size_lp-1:0] resA_o
-  ,output [output_size_lp-1:0] resB_o
+  ,output [output_size_p-1:0] resA_o
+  ,output [output_size_p-1:0] resB_o
 );
   if(capacity_p == 8) begin
     bsg_adder_wallace_tree_8 #(

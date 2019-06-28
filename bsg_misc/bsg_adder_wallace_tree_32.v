@@ -3,8 +3,8 @@ module bsg_adder_wallace_tree_32 #(
   parameter integer width_p = "inv"
 )(
   input [31:0][width_p-1:0] ops_i
-  ,output [4+width_p:0] resA_o
-  ,output [4+width_p:0] resB_o
+  ,output [-1+width_p:0] resA_o
+  ,output [-1+width_p:0] resB_o
 );
 wire [width_p-1:0] csa_0_0_res_o;
 wire [width_p-1:0] csa_0_0_car_o;
@@ -26,46 +26,46 @@ wire [width_p-1:0] csa_0_8_res_o;
 wire [width_p-1:0] csa_0_8_car_o;
 wire [width_p-1:0] csa_0_9_res_o;
 wire [width_p-1:0] csa_0_9_car_o;
-wire [width_p+0:0] csa_1_0_res_o;
-wire [width_p+0:0] csa_1_0_car_o;
-wire [width_p+0:0] csa_1_1_res_o;
-wire [width_p+0:0] csa_1_1_car_o;
-wire [width_p+0:0] csa_1_2_res_o;
-wire [width_p+0:0] csa_1_2_car_o;
-wire [width_p+0:0] csa_1_3_res_o;
-wire [width_p+0:0] csa_1_3_car_o;
-wire [width_p+0:0] csa_1_4_res_o;
-wire [width_p+0:0] csa_1_4_car_o;
-wire [width_p+0:0] csa_1_5_res_o;
-wire [width_p+0:0] csa_1_5_car_o;
-wire [width_p+0:0] csa_1_6_res_o;
-wire [width_p+0:0] csa_1_6_car_o;
-wire [width_p+1:0] csa_2_0_res_o;
-wire [width_p+1:0] csa_2_0_car_o;
-wire [width_p+1:0] csa_2_1_res_o;
-wire [width_p+1:0] csa_2_1_car_o;
-wire [width_p+1:0] csa_2_2_res_o;
-wire [width_p+1:0] csa_2_2_car_o;
-wire [width_p+1:0] csa_2_3_res_o;
-wire [width_p+1:0] csa_2_3_car_o;
-wire [width_p+1:0] csa_2_4_res_o;
-wire [width_p+1:0] csa_2_4_car_o;
-wire [width_p+2:0] csa_3_0_res_o;
-wire [width_p+2:0] csa_3_0_car_o;
-wire [width_p+2:0] csa_3_1_res_o;
-wire [width_p+2:0] csa_3_1_car_o;
-wire [width_p+2:0] csa_3_2_res_o;
-wire [width_p+2:0] csa_3_2_car_o;
-wire [width_p+3:0] csa_4_0_res_o;
-wire [width_p+3:0] csa_4_0_car_o;
-wire [width_p+3:0] csa_4_1_res_o;
-wire [width_p+3:0] csa_4_1_car_o;
-wire [width_p+4:0] csa_5_0_res_o;
-wire [width_p+4:0] csa_5_0_car_o;
-wire [width_p+4:0] csa_6_0_res_o;
-wire [width_p+4:0] csa_6_0_car_o;
-wire [width_p+4:0] csa_7_0_res_o;
-wire [width_p+4:0] csa_7_0_car_o;
+wire [width_p-1:0] csa_1_0_res_o;
+wire [width_p-1:0] csa_1_0_car_o;
+wire [width_p-1:0] csa_1_1_res_o;
+wire [width_p-1:0] csa_1_1_car_o;
+wire [width_p-1:0] csa_1_2_res_o;
+wire [width_p-1:0] csa_1_2_car_o;
+wire [width_p-1:0] csa_1_3_res_o;
+wire [width_p-1:0] csa_1_3_car_o;
+wire [width_p-1:0] csa_1_4_res_o;
+wire [width_p-1:0] csa_1_4_car_o;
+wire [width_p-1:0] csa_1_5_res_o;
+wire [width_p-1:0] csa_1_5_car_o;
+wire [width_p-1:0] csa_1_6_res_o;
+wire [width_p-1:0] csa_1_6_car_o;
+wire [width_p-1:0] csa_2_0_res_o;
+wire [width_p-1:0] csa_2_0_car_o;
+wire [width_p-1:0] csa_2_1_res_o;
+wire [width_p-1:0] csa_2_1_car_o;
+wire [width_p-1:0] csa_2_2_res_o;
+wire [width_p-1:0] csa_2_2_car_o;
+wire [width_p-1:0] csa_2_3_res_o;
+wire [width_p-1:0] csa_2_3_car_o;
+wire [width_p-1:0] csa_2_4_res_o;
+wire [width_p-1:0] csa_2_4_car_o;
+wire [width_p-1:0] csa_3_0_res_o;
+wire [width_p-1:0] csa_3_0_car_o;
+wire [width_p-1:0] csa_3_1_res_o;
+wire [width_p-1:0] csa_3_1_car_o;
+wire [width_p-1:0] csa_3_2_res_o;
+wire [width_p-1:0] csa_3_2_car_o;
+wire [width_p-1:0] csa_4_0_res_o;
+wire [width_p-1:0] csa_4_0_car_o;
+wire [width_p-1:0] csa_4_1_res_o;
+wire [width_p-1:0] csa_4_1_car_o;
+wire [width_p-1:0] csa_5_0_res_o;
+wire [width_p-1:0] csa_5_0_car_o;
+wire [width_p-1:0] csa_6_0_res_o;
+wire [width_p-1:0] csa_6_0_car_o;
+wire [width_p-1:0] csa_7_0_res_o;
+wire [width_p-1:0] csa_7_0_car_o;
 
 bsg_adder_carry_save#(
   .width_p(width_p+0)
@@ -188,245 +188,245 @@ bsg_adder_carry_save#(
 wire [width_p+0:0] csa_internal_wire_18 = {1'b0, csa_0_9_res_o};
 wire [width_p+0:0] csa_internal_wire_19 = {csa_0_9_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+1)
+  .width_p(width_p+0)
 ) csa_1_0 (
-  .opA_i({1'b0, ops_i[30]})
-  ,.opB_i({1'b0, ops_i[31]})
-  ,.opC_i(csa_internal_wire_0)
+  .opA_i(ops_i[30])
+  ,.opB_i(ops_i[31])
+  ,.opC_i(csa_internal_wire_0[width_p-1:0])
   ,.res_o(csa_1_0_res_o)
   ,.car_o(csa_1_0_car_o)
 );
 
-wire [width_p+1:0] csa_internal_wire_20 = {1'b0, csa_1_0_res_o};
-wire [width_p+1:0] csa_internal_wire_21 = {csa_1_0_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_20 = {1'b0, csa_1_0_res_o};
+wire [width_p+0:0] csa_internal_wire_21 = {csa_1_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+1)
+  .width_p(width_p+0)
 ) csa_1_1 (
-  .opA_i(csa_internal_wire_1)
-  ,.opB_i(csa_internal_wire_2)
-  ,.opC_i(csa_internal_wire_3)
+  .opA_i(csa_internal_wire_1[width_p-1:0])
+  ,.opB_i(csa_internal_wire_2[width_p-1:0])
+  ,.opC_i(csa_internal_wire_3[width_p-1:0])
   ,.res_o(csa_1_1_res_o)
   ,.car_o(csa_1_1_car_o)
 );
 
-wire [width_p+1:0] csa_internal_wire_22 = {1'b0, csa_1_1_res_o};
-wire [width_p+1:0] csa_internal_wire_23 = {csa_1_1_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_22 = {1'b0, csa_1_1_res_o};
+wire [width_p+0:0] csa_internal_wire_23 = {csa_1_1_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+1)
+  .width_p(width_p+0)
 ) csa_1_2 (
-  .opA_i(csa_internal_wire_4)
-  ,.opB_i(csa_internal_wire_5)
-  ,.opC_i(csa_internal_wire_6)
+  .opA_i(csa_internal_wire_4[width_p-1:0])
+  ,.opB_i(csa_internal_wire_5[width_p-1:0])
+  ,.opC_i(csa_internal_wire_6[width_p-1:0])
   ,.res_o(csa_1_2_res_o)
   ,.car_o(csa_1_2_car_o)
 );
 
-wire [width_p+1:0] csa_internal_wire_24 = {1'b0, csa_1_2_res_o};
-wire [width_p+1:0] csa_internal_wire_25 = {csa_1_2_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_24 = {1'b0, csa_1_2_res_o};
+wire [width_p+0:0] csa_internal_wire_25 = {csa_1_2_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+1)
+  .width_p(width_p+0)
 ) csa_1_3 (
-  .opA_i(csa_internal_wire_7)
-  ,.opB_i(csa_internal_wire_8)
-  ,.opC_i(csa_internal_wire_9)
+  .opA_i(csa_internal_wire_7[width_p-1:0])
+  ,.opB_i(csa_internal_wire_8[width_p-1:0])
+  ,.opC_i(csa_internal_wire_9[width_p-1:0])
   ,.res_o(csa_1_3_res_o)
   ,.car_o(csa_1_3_car_o)
 );
 
-wire [width_p+1:0] csa_internal_wire_26 = {1'b0, csa_1_3_res_o};
-wire [width_p+1:0] csa_internal_wire_27 = {csa_1_3_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_26 = {1'b0, csa_1_3_res_o};
+wire [width_p+0:0] csa_internal_wire_27 = {csa_1_3_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+1)
+  .width_p(width_p+0)
 ) csa_1_4 (
-  .opA_i(csa_internal_wire_10)
-  ,.opB_i(csa_internal_wire_11)
-  ,.opC_i(csa_internal_wire_12)
+  .opA_i(csa_internal_wire_10[width_p-1:0])
+  ,.opB_i(csa_internal_wire_11[width_p-1:0])
+  ,.opC_i(csa_internal_wire_12[width_p-1:0])
   ,.res_o(csa_1_4_res_o)
   ,.car_o(csa_1_4_car_o)
 );
 
-wire [width_p+1:0] csa_internal_wire_28 = {1'b0, csa_1_4_res_o};
-wire [width_p+1:0] csa_internal_wire_29 = {csa_1_4_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_28 = {1'b0, csa_1_4_res_o};
+wire [width_p+0:0] csa_internal_wire_29 = {csa_1_4_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+1)
+  .width_p(width_p+0)
 ) csa_1_5 (
-  .opA_i(csa_internal_wire_13)
-  ,.opB_i(csa_internal_wire_14)
-  ,.opC_i(csa_internal_wire_15)
+  .opA_i(csa_internal_wire_13[width_p-1:0])
+  ,.opB_i(csa_internal_wire_14[width_p-1:0])
+  ,.opC_i(csa_internal_wire_15[width_p-1:0])
   ,.res_o(csa_1_5_res_o)
   ,.car_o(csa_1_5_car_o)
 );
 
-wire [width_p+1:0] csa_internal_wire_30 = {1'b0, csa_1_5_res_o};
-wire [width_p+1:0] csa_internal_wire_31 = {csa_1_5_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_30 = {1'b0, csa_1_5_res_o};
+wire [width_p+0:0] csa_internal_wire_31 = {csa_1_5_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+1)
+  .width_p(width_p+0)
 ) csa_1_6 (
-  .opA_i(csa_internal_wire_16)
-  ,.opB_i(csa_internal_wire_17)
-  ,.opC_i(csa_internal_wire_18)
+  .opA_i(csa_internal_wire_16[width_p-1:0])
+  ,.opB_i(csa_internal_wire_17[width_p-1:0])
+  ,.opC_i(csa_internal_wire_18[width_p-1:0])
   ,.res_o(csa_1_6_res_o)
   ,.car_o(csa_1_6_car_o)
 );
 
-wire [width_p+1:0] csa_internal_wire_32 = {1'b0, csa_1_6_res_o};
-wire [width_p+1:0] csa_internal_wire_33 = {csa_1_6_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_32 = {1'b0, csa_1_6_res_o};
+wire [width_p+0:0] csa_internal_wire_33 = {csa_1_6_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+2)
+  .width_p(width_p+0)
 ) csa_2_0 (
-  .opA_i({1'b0, csa_internal_wire_19})
-  ,.opB_i(csa_internal_wire_20)
-  ,.opC_i(csa_internal_wire_21)
+  .opA_i(csa_internal_wire_19[width_p-1:0])
+  ,.opB_i(csa_internal_wire_20[width_p-1:0])
+  ,.opC_i(csa_internal_wire_21[width_p-1:0])
   ,.res_o(csa_2_0_res_o)
   ,.car_o(csa_2_0_car_o)
 );
 
-wire [width_p+2:0] csa_internal_wire_34 = {1'b0, csa_2_0_res_o};
-wire [width_p+2:0] csa_internal_wire_35 = {csa_2_0_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_34 = {1'b0, csa_2_0_res_o};
+wire [width_p+0:0] csa_internal_wire_35 = {csa_2_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+2)
+  .width_p(width_p+0)
 ) csa_2_1 (
-  .opA_i(csa_internal_wire_22)
-  ,.opB_i(csa_internal_wire_23)
-  ,.opC_i(csa_internal_wire_24)
+  .opA_i(csa_internal_wire_22[width_p-1:0])
+  ,.opB_i(csa_internal_wire_23[width_p-1:0])
+  ,.opC_i(csa_internal_wire_24[width_p-1:0])
   ,.res_o(csa_2_1_res_o)
   ,.car_o(csa_2_1_car_o)
 );
 
-wire [width_p+2:0] csa_internal_wire_36 = {1'b0, csa_2_1_res_o};
-wire [width_p+2:0] csa_internal_wire_37 = {csa_2_1_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_36 = {1'b0, csa_2_1_res_o};
+wire [width_p+0:0] csa_internal_wire_37 = {csa_2_1_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+2)
+  .width_p(width_p+0)
 ) csa_2_2 (
-  .opA_i(csa_internal_wire_25)
-  ,.opB_i(csa_internal_wire_26)
-  ,.opC_i(csa_internal_wire_27)
+  .opA_i(csa_internal_wire_25[width_p-1:0])
+  ,.opB_i(csa_internal_wire_26[width_p-1:0])
+  ,.opC_i(csa_internal_wire_27[width_p-1:0])
   ,.res_o(csa_2_2_res_o)
   ,.car_o(csa_2_2_car_o)
 );
 
-wire [width_p+2:0] csa_internal_wire_38 = {1'b0, csa_2_2_res_o};
-wire [width_p+2:0] csa_internal_wire_39 = {csa_2_2_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_38 = {1'b0, csa_2_2_res_o};
+wire [width_p+0:0] csa_internal_wire_39 = {csa_2_2_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+2)
+  .width_p(width_p+0)
 ) csa_2_3 (
-  .opA_i(csa_internal_wire_28)
-  ,.opB_i(csa_internal_wire_29)
-  ,.opC_i(csa_internal_wire_30)
+  .opA_i(csa_internal_wire_28[width_p-1:0])
+  ,.opB_i(csa_internal_wire_29[width_p-1:0])
+  ,.opC_i(csa_internal_wire_30[width_p-1:0])
   ,.res_o(csa_2_3_res_o)
   ,.car_o(csa_2_3_car_o)
 );
 
-wire [width_p+2:0] csa_internal_wire_40 = {1'b0, csa_2_3_res_o};
-wire [width_p+2:0] csa_internal_wire_41 = {csa_2_3_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_40 = {1'b0, csa_2_3_res_o};
+wire [width_p+0:0] csa_internal_wire_41 = {csa_2_3_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+2)
+  .width_p(width_p+0)
 ) csa_2_4 (
-  .opA_i(csa_internal_wire_31)
-  ,.opB_i(csa_internal_wire_32)
-  ,.opC_i(csa_internal_wire_33)
+  .opA_i(csa_internal_wire_31[width_p-1:0])
+  ,.opB_i(csa_internal_wire_32[width_p-1:0])
+  ,.opC_i(csa_internal_wire_33[width_p-1:0])
   ,.res_o(csa_2_4_res_o)
   ,.car_o(csa_2_4_car_o)
 );
 
-wire [width_p+2:0] csa_internal_wire_42 = {1'b0, csa_2_4_res_o};
-wire [width_p+2:0] csa_internal_wire_43 = {csa_2_4_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_42 = {1'b0, csa_2_4_res_o};
+wire [width_p+0:0] csa_internal_wire_43 = {csa_2_4_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+3)
+  .width_p(width_p+0)
 ) csa_3_0 (
-  .opA_i(csa_internal_wire_34)
-  ,.opB_i(csa_internal_wire_35)
-  ,.opC_i(csa_internal_wire_36)
+  .opA_i(csa_internal_wire_34[width_p-1:0])
+  ,.opB_i(csa_internal_wire_35[width_p-1:0])
+  ,.opC_i(csa_internal_wire_36[width_p-1:0])
   ,.res_o(csa_3_0_res_o)
   ,.car_o(csa_3_0_car_o)
 );
 
-wire [width_p+3:0] csa_internal_wire_44 = {1'b0, csa_3_0_res_o};
-wire [width_p+3:0] csa_internal_wire_45 = {csa_3_0_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_44 = {1'b0, csa_3_0_res_o};
+wire [width_p+0:0] csa_internal_wire_45 = {csa_3_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+3)
+  .width_p(width_p+0)
 ) csa_3_1 (
-  .opA_i(csa_internal_wire_37)
-  ,.opB_i(csa_internal_wire_38)
-  ,.opC_i(csa_internal_wire_39)
+  .opA_i(csa_internal_wire_37[width_p-1:0])
+  ,.opB_i(csa_internal_wire_38[width_p-1:0])
+  ,.opC_i(csa_internal_wire_39[width_p-1:0])
   ,.res_o(csa_3_1_res_o)
   ,.car_o(csa_3_1_car_o)
 );
 
-wire [width_p+3:0] csa_internal_wire_46 = {1'b0, csa_3_1_res_o};
-wire [width_p+3:0] csa_internal_wire_47 = {csa_3_1_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_46 = {1'b0, csa_3_1_res_o};
+wire [width_p+0:0] csa_internal_wire_47 = {csa_3_1_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+3)
+  .width_p(width_p+0)
 ) csa_3_2 (
-  .opA_i(csa_internal_wire_40)
-  ,.opB_i(csa_internal_wire_41)
-  ,.opC_i(csa_internal_wire_42)
+  .opA_i(csa_internal_wire_40[width_p-1:0])
+  ,.opB_i(csa_internal_wire_41[width_p-1:0])
+  ,.opC_i(csa_internal_wire_42[width_p-1:0])
   ,.res_o(csa_3_2_res_o)
   ,.car_o(csa_3_2_car_o)
 );
 
-wire [width_p+3:0] csa_internal_wire_48 = {1'b0, csa_3_2_res_o};
-wire [width_p+3:0] csa_internal_wire_49 = {csa_3_2_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_48 = {1'b0, csa_3_2_res_o};
+wire [width_p+0:0] csa_internal_wire_49 = {csa_3_2_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+4)
+  .width_p(width_p+0)
 ) csa_4_0 (
-  .opA_i({1'b0, csa_internal_wire_43})
-  ,.opB_i(csa_internal_wire_44)
-  ,.opC_i(csa_internal_wire_45)
+  .opA_i(csa_internal_wire_43[width_p-1:0])
+  ,.opB_i(csa_internal_wire_44[width_p-1:0])
+  ,.opC_i(csa_internal_wire_45[width_p-1:0])
   ,.res_o(csa_4_0_res_o)
   ,.car_o(csa_4_0_car_o)
 );
 
-wire [width_p+4:0] csa_internal_wire_50 = {1'b0, csa_4_0_res_o};
-wire [width_p+4:0] csa_internal_wire_51 = {csa_4_0_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_50 = {1'b0, csa_4_0_res_o};
+wire [width_p+0:0] csa_internal_wire_51 = {csa_4_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+4)
+  .width_p(width_p+0)
 ) csa_4_1 (
-  .opA_i(csa_internal_wire_46)
-  ,.opB_i(csa_internal_wire_47)
-  ,.opC_i(csa_internal_wire_48)
+  .opA_i(csa_internal_wire_46[width_p-1:0])
+  ,.opB_i(csa_internal_wire_47[width_p-1:0])
+  ,.opC_i(csa_internal_wire_48[width_p-1:0])
   ,.res_o(csa_4_1_res_o)
   ,.car_o(csa_4_1_car_o)
 );
 
-wire [width_p+4:0] csa_internal_wire_52 = {1'b0, csa_4_1_res_o};
-wire [width_p+4:0] csa_internal_wire_53 = {csa_4_1_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_52 = {1'b0, csa_4_1_res_o};
+wire [width_p+0:0] csa_internal_wire_53 = {csa_4_1_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+5)
+  .width_p(width_p+0)
 ) csa_5_0 (
-  .opA_i({1'b0, csa_internal_wire_49})
-  ,.opB_i(csa_internal_wire_50)
-  ,.opC_i(csa_internal_wire_51)
+  .opA_i(csa_internal_wire_49[width_p-1:0])
+  ,.opB_i(csa_internal_wire_50[width_p-1:0])
+  ,.opC_i(csa_internal_wire_51[width_p-1:0])
   ,.res_o(csa_5_0_res_o)
   ,.car_o(csa_5_0_car_o)
 );
 
-wire [width_p+5:0] csa_internal_wire_54 = {1'b0, csa_5_0_res_o};
-wire [width_p+5:0] csa_internal_wire_55 = {csa_5_0_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_54 = {1'b0, csa_5_0_res_o};
+wire [width_p+0:0] csa_internal_wire_55 = {csa_5_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+5)
+  .width_p(width_p+0)
 ) csa_6_0 (
-  .opA_i(csa_internal_wire_52)
-  ,.opB_i(csa_internal_wire_53)
-  ,.opC_i(csa_internal_wire_54[width_p+4:0])
+  .opA_i(csa_internal_wire_52[width_p-1:0])
+  ,.opB_i(csa_internal_wire_53[width_p-1:0])
+  ,.opC_i(csa_internal_wire_54[width_p-1:0])
   ,.res_o(csa_6_0_res_o)
   ,.car_o(csa_6_0_car_o)
 );
 
-wire [width_p+5:0] csa_internal_wire_56 = {1'b0, csa_6_0_res_o};
-wire [width_p+5:0] csa_internal_wire_57 = {csa_6_0_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_56 = {1'b0, csa_6_0_res_o};
+wire [width_p+0:0] csa_internal_wire_57 = {csa_6_0_car_o,1'b0};
 bsg_adder_carry_save#(
-  .width_p(width_p+5)
+  .width_p(width_p+0)
 ) csa_7_0 (
-  .opA_i(csa_internal_wire_55[width_p+4:0])
-  ,.opB_i(csa_internal_wire_56[width_p+4:0])
-  ,.opC_i(csa_internal_wire_57[width_p+4:0])
+  .opA_i(csa_internal_wire_55[width_p-1:0])
+  ,.opB_i(csa_internal_wire_56[width_p-1:0])
+  ,.opC_i(csa_internal_wire_57[width_p-1:0])
   ,.res_o(csa_7_0_res_o)
   ,.car_o(csa_7_0_car_o)
 );
 
-wire [width_p+5:0] csa_internal_wire_58 = {1'b0, csa_7_0_res_o};
-wire [width_p+5:0] csa_internal_wire_59 = {csa_7_0_car_o,1'b0};
+wire [width_p+0:0] csa_internal_wire_58 = {1'b0, csa_7_0_res_o};
+wire [width_p+0:0] csa_internal_wire_59 = {csa_7_0_car_o,1'b0};
 
 assign resA_o = csa_internal_wire_58;
 assign resB_o = csa_internal_wire_59;
