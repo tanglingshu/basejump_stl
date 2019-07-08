@@ -1,7 +1,5 @@
 {
 	"daily_design" : [
-			{"...":"<bsg_mul_iterative_32bits_stride8.json>"},
-			{"...":"<bsg_mul_iterative_32bits_stride16.json>"},
-			{"...":"<bsg_mul_iterative_32bits_stride32.json>"}
+			{"...":"<bsg_mul_iterative_pipelined_32bits_stride8.json>"}
 	]
 }
