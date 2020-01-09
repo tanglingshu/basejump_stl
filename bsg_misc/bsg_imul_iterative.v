@@ -149,7 +149,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n324 = new_n315 & new_n323 ;
   assign new_n325 = new_n315 | new_n323 ;
   assign new_n326 = ~new_n324 & new_n325 ;
-  assign new_n327 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n326 ;
+  assign new_n327 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n326 ;
   assign new_n328 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n326 ;
   assign new_n329 = new_n327 | new_n328 ;
   assign new_n330 = new_n291 & ~new_n329 ;
@@ -217,7 +217,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n392 = new_n382 & new_n391 ;
   assign new_n393 = new_n382 | new_n391 ;
   assign new_n394 = ~new_n392 & new_n393 ;
-  assign new_n395 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n394 ;
+  assign new_n395 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n394 ;
   assign new_n396 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n394 ;
   assign new_n397 = new_n395 | new_n396 ;
   assign new_n398 = new_n359 & ~new_n397 ;
@@ -375,7 +375,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n550 = new_n540 & new_n549 ;
   assign new_n551 = new_n540 | new_n549 ;
   assign new_n552 = ~new_n550 & new_n551 ;
-  assign new_n553 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n552 ;
+  assign new_n553 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n552 ;
   assign new_n554 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n552 ;
   assign new_n555 = new_n553 | new_n554 ;
   assign new_n556 = new_n514 & ~new_n555 ;
@@ -531,7 +531,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n706 = new_n696 & new_n705 ;
   assign new_n707 = new_n696 | new_n705 ;
   assign new_n708 = ~new_n706 & new_n707 ;
-  assign new_n709 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n708 ;
+  assign new_n709 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n708 ;
   assign new_n710 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n708 ;
   assign new_n711 = new_n709 | new_n710 ;
   assign new_n712 = new_n670 & ~new_n711 ;
@@ -618,7 +618,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n793 = new_n773 & new_n792 ;
   assign new_n794 = new_n773 | new_n792 ;
   assign new_n795 = ~new_n793 & new_n794 ;
-  assign new_n796 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n795 ;
+  assign new_n796 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n795 ;
   assign new_n797 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n795 ;
   assign new_n798 = new_n796 | new_n797 ;
   assign new_n799 = new_n746 & ~new_n798 ;
@@ -692,7 +692,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n867 = new_n857 & new_n866 ;
   assign new_n868 = new_n857 | new_n866 ;
   assign new_n869 = ~new_n867 & new_n868 ;
-  assign new_n870 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n869 ;
+  assign new_n870 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n869 ;
   assign new_n871 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n869 ;
   assign new_n872 = new_n870 | new_n871 ;
   assign new_n873 = new_n831 & ~new_n872 ;
@@ -847,7 +847,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n1022 = new_n1013 & new_n1021 ;
   assign new_n1023 = new_n1013 | new_n1021 ;
   assign new_n1024 = ~new_n1022 & new_n1023 ;
-  assign new_n1025 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n1024 ;
+  assign new_n1025 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n1024 ;
   assign new_n1026 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n1024 ;
   assign new_n1027 = new_n1025 | new_n1026 ;
   assign new_n1028 = new_n986 & ~new_n1027 ;
@@ -937,7 +937,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n1112 = new_n1089 & new_n1111 ;
   assign new_n1113 = new_n1089 | new_n1111 ;
   assign new_n1114 = ~new_n1112 & new_n1113 ;
-  assign new_n1115 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n1114 ;
+  assign new_n1115 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n1114 ;
   assign new_n1116 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n1114 ;
   assign new_n1117 = new_n1115 | new_n1116 ;
   assign new_n1118 = new_n1062 & ~new_n1117 ;
@@ -1011,7 +1011,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n1186 = new_n1177 & new_n1185 ;
   assign new_n1187 = new_n1177 | new_n1185 ;
   assign new_n1188 = ~new_n1186 & new_n1187 ;
-  assign new_n1189 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n1188 ;
+  assign new_n1189 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n1188 ;
   assign new_n1190 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n1188 ;
   assign new_n1191 = new_n1189 | new_n1190 ;
   assign new_n1192 = new_n1150 & ~new_n1191 ;
@@ -1170,7 +1170,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n1345 = new_n1334 & new_n1344 ;
   assign new_n1346 = new_n1334 | new_n1344 ;
   assign new_n1347 = ~new_n1345 & new_n1346 ;
-  assign new_n1348 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n1347 ;
+  assign new_n1348 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n1347 ;
   assign new_n1349 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n1347 ;
   assign new_n1350 = new_n1348 | new_n1349 ;
   assign new_n1351 = new_n1307 & ~new_n1350 ;
@@ -1203,7 +1203,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n1378 = ( new_n1345 & new_n1374 ) | ( new_n1345 & ~new_n1377 ) | ( new_n1374 & ~new_n1377 );
   assign new_n1379 = ( new_n1372 & ~new_n1377 ) | ( new_n1372 & new_n1378 ) | ( ~new_n1377 & new_n1378 );
   assign new_n1380 = \top|bsg_imul_iterative(1)|gets_high_part_r | new_n1377 ;
-  assign new_n1381 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n1372 ;
+  assign new_n1381 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n1372 ;
   assign new_n1382 = ( new_n1378 & ~new_n1380 ) | ( new_n1378 & new_n1381 ) | ( ~new_n1380 & new_n1381 );
   assign new_n1383 = \top|bsg_imul_iterative(1)|gets_high_part_r | new_n1382 ;
   assign new_n1384 = ( ~new_n1379 & new_n1382 ) | ( ~new_n1379 & new_n1383 ) | ( new_n1382 & new_n1383 );
@@ -1249,7 +1249,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n1424 = ( new_n1412 & new_n1422 ) | ( new_n1412 & ~new_n1423 ) | ( new_n1422 & ~new_n1423 );
   assign new_n1425 = ( ~new_n1422 & new_n1423 ) | ( ~new_n1422 & new_n1424 ) | ( new_n1423 & new_n1424 );
   assign new_n1426 = ( ~new_n1412 & new_n1424 ) | ( ~new_n1412 & new_n1425 ) | ( new_n1424 & new_n1425 );
-  assign new_n1427 = ( ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n1384 ) | ( ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n1426 ) | ( new_n1384 & new_n1426 );
+  assign new_n1427 = ( ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n1384 ) | ( ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n1426 ) | ( new_n1384 & new_n1426 );
   assign new_n1428 = ( \top|bsg_imul_iterative(1)|gets_high_part_r & new_n189 ) | ( \top|bsg_imul_iterative(1)|gets_high_part_r & ~new_n1426 ) | ( new_n189 & ~new_n1426 );
   assign new_n1429 = new_n1427 & new_n1428 ;
   assign new_n1430 = ~new_n188 & new_n1429 ;
