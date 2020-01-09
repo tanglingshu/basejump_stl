@@ -42,7 +42,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n217 = ~new_n189 & new_n215 ;
   assign new_n218 = ( new_n213 & ~new_n216 ) | ( new_n213 & new_n217 ) | ( ~new_n216 & new_n217 );
   assign new_n219 = ~new_n188 & new_n218 ;
-  assign new_n220 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~top|bsg_imul_iterative(1)|all_sh_lsb_zero_r ;
+  assign new_n220 = \top|bsg_imul_iterative(1)|gets_high_part_r & ~\top|bsg_imul_iterative(1)|all_sh_lsb_zero_r ;
   assign new_n221 = ( \result_o[0] & new_n200 ) | ( \result_o[0] & new_n220 ) | ( new_n200 & new_n220 );
   assign new_n222 = ( new_n188 & new_n220 ) | ( new_n188 & new_n221 ) | ( new_n220 & new_n221 );
   assign new_n223 = ( new_n218 & new_n220 ) | ( new_n218 & new_n221 ) | ( new_n220 & new_n221 );
@@ -61,7 +61,7 @@ module top(clock , clk_i , reset_i , v_i , \opA_i[0] , \opA_i[1] , \opA_i[2] , \
   assign new_n236 = ( new_n188 & ~new_n234 ) | ( new_n188 & new_n235 ) | ( ~new_n234 & new_n235 );
   assign new_n237 = ( ~new_n220 & new_n235 ) | ( ~new_n220 & new_n236 ) | ( new_n235 & new_n236 );
   assign new_n238 = \result_o[2] & ~new_n214 ;
-  assign new_n239 = ~top|bsg_imul_iterative(1)|gets_high_part_r & new_n211 ;
+  assign new_n239 = ~\top|bsg_imul_iterative(1)|gets_high_part_r & new_n211 ;
   assign new_n240 = \result_o[2] & \top|bsg_imul_iterative(1)|opB_r[2] ;
   assign new_n241 = \result_o[2] & ~new_n240 ;
   assign new_n242 = ( new_n187 & new_n240 ) | ( new_n187 & ~new_n241 ) | ( new_n240 & ~new_n241 );
